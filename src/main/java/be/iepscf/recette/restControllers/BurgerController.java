@@ -47,6 +47,7 @@ public class BurgerController {
     public void delete(@PathVariable("id") Integer id){
         burgerDAO.deleteById(id);
     }
+
     @GetMapping("/deleteByName/{name}")
     public void delete(@PathVariable("name") String name){
         System.out.println("delete burger called : " + name);
