@@ -38,19 +38,21 @@ public class RecetteApplication {
         hamburger.setDescription("simple hamburger avec viande chimique et sauce ketchup");
         hamburger.setPrix(2.5);
         hamburger.setRecette("du pain, de la sauce ketchup et une viande");
+        hamburger.setImage("https://gourmandiz.dhnet.be/app/uploads/2019/02/royaldeluxe.jpg");
 
         Burger giant = new Burger();
         giant.setNom("giant");
         giant.setDescription("hamburger avec une délicieuse viande pure boeuf ainsi que des rondelles de tomates, de la salade et une sauce giant faite maison");
         giant.setPrix(3.5);
         giant.setRecette("du pain, une viande pure boeuf, de la tomate, de la salade et de la sauce giant");
+        giant.setImage("https://img.plusdebonsplans.com/2013/05/quick-giant-junior.jpg");
 
         Burger doubleGiant = new Burger();
         doubleGiant.setNom("double giant");
         doubleGiant.setDescription("hamburger avec deux délicieuses viandes pure boeuf ainsi que des rondelles de tomates, de la salade et une sauce giant faite maison");
         doubleGiant.setPrix(4.8);
         doubleGiant.setRecette("du pain, deux viandes pure boeuf, de la tomate, de la salade et de la sauce giant");
-
+        doubleGiant.setImage("https://cdn.eat-list.fr/blog/article/le-giant-burger-culte-de-quick_833.jpg");
 
         // INGREDIENTS
         Ingredient pain = new Ingredient();

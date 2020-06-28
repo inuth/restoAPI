@@ -7,4 +7,5 @@ import java.util.Optional;
 
 public interface BurgerDAO extends JpaRepository<Burger, Integer> {
     Optional<Burger> findByNom(String nom);
+    void deleteByNom(String nom);
 }

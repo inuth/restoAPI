@@ -25,7 +25,8 @@ public class BurgerMapper {
         Burger burger = new Burger();
         burger.setRecette(burgerDTO.getRecette());
         burger.setPrix(burgerDTO.getPrix());
-        burger.setNom(burgerDTO.getNom());
+        burger.setNom(burgerDTO.getNom().toLowerCase());
+        burger.setImage(burgerDTO.getImage());
         burger.setDescription(burgerDTO.getDescription());
 
         Set<BurgerIngredient> burgerIngredients = burgerDTO.getIngredients()

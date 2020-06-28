@@ -23,6 +23,7 @@ public class Burger {
     @Lob
     @Column
     private String recette;
+    private String image;
 
     @OneToMany(cascade = {CascadeType.REMOVE, CascadeType.PERSIST})
     @JoinColumn(name = "burger_id", nullable = false)
@@ -74,5 +75,13 @@ public class Burger {
 
     public void setBurgerIngredients(Set<BurgerIngredient> burgerIngredients) {
         this.burgerIngredients = burgerIngredients;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

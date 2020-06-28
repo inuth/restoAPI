@@ -12,6 +12,7 @@ public class BurgerPostDTO {
     private double prix;
     private String description;
     private String recette;
+    private String image;
     private List<BurgerPostIngredientDTO> ingredients = new ArrayList<>();
 
     public String getNom() {
@@ -44,6 +45,14 @@ public class BurgerPostDTO {
 
     public void setRecette(String recette) {
         this.recette = recette;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public List<BurgerPostIngredientDTO> getIngredients() {
